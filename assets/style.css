@@ -2,7 +2,7 @@
     --primary-color: #f9f5ee;
     --secondary-color: #000000;
     --white: #ffffff;
-    --text: rgb(246, 166, 100);
+    --text: #f6a664;
 }
 
 html{
@@ -32,14 +32,12 @@ h2{
     list-style: none;
     display: inline-block;
     padding: 10px;
-    background-color: #00000070;
-    position: fixed;
-    bottom: 0;
     z-index: 10;
 }
 
 
 #home li{
+    /* background-color: #00000070; */
     display: inline;
     padding: 0.5em 1em;
     border-radius: 15px;
@@ -58,7 +56,7 @@ svg{
 
 a{
     text-decoration: none;
-    color: var(--white);
+    color: #000000;
 }
 
 p{
@@ -108,9 +106,7 @@ p{
 }
 
 #logo{
-    /* padding-top: 50px; */
-    position: fixed;
-    left: 1%;
+    padding-top: 50px;
     height: 50px;
 }
 
@@ -128,7 +124,7 @@ p{
 }
 
 #home li:hover {
-    background-color: var(--secondary-color);
+    background-color: #0000002f;
 }
 
 #activities{
@@ -180,6 +176,6 @@ p{
 }
 
 #atmosfair{
-    margin-top: 80px;
+    margin-top: 30px;
     height: 200px;
 }
