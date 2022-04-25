@@ -96,7 +96,7 @@ p{
 
 
 #home{
-    background-image: url("assets/images/atmosfair\ bg.png");
+    background-image: url("/assets/images/atmosfairbg.png");
     background-position: center;
     background-size: cover;
     height: 100vh;
