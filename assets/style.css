@@ -1,0 +1,173 @@
+:root{
+    --primary-color: #100127;
+    --secondary-color: #000000;
+    --white: #ffffff;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+
+body{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+section{
+    /* height: 100vh; */
+    color: var(--white);
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    padding-top: 5em;
+}
+
+
+#home ul{
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+}
+
+
+#home li{
+    display: inline;
+    padding: 0.5em 1em;
+    border-radius: 15px;
+}
+
+li{
+    padding: 5px;
+}
+
+
+svg{
+    height: 100vh;
+    position: fixed;
+    left: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+p{
+    padding: 0em 8em;
+    line-height: 1.6;
+}
+
+
+.bg-primary{
+    background-color: var(--primary-color);
+    /* background: linear-gradient(var(--primary-color) 20%, #fff); */
+}
+
+.card{
+    height: 15rem;
+    width: 20rem;
+    border-radius: 20px;
+    background-color: var(--white);
+}
+
+.card:hover{
+    transform: scale(1.3);
+    border-radius: 0;
+}
+
+.center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-sponsor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+#home{
+    background-image: url("/assets/images/atmosfair\ bg.png");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#logo{
+    padding-top: 50px;
+    height: 50px;
+}
+
+
+#home h1{
+    font-size: 6em;
+    width: 100%;
+    line-height: 0;
+}
+
+#home ul{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#home li:hover {
+    background-color: var(--secondary-color);
+}
+
+#activities{
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5em;
+    padding: 5rem 5rem 0rem 5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+#activity-title{
+    position: absolute;
+    left: 42%;
+    padding-top: 1em;
+    color: var(--white);
+}
+
+#footer{
+    margin-top: 10em;
+    height: 40vh;
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+#footer h2{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.sponsorimg{
+    padding: 3em;
+}
+
+#sponsors{
+    text-align: center;
+}
+
+.copyright{
+    position: relative;
+    margin-top: 5%;
+    color: var(--white);
+}
+
+#footer ul{
+    list-style: none;
+}
