@@ -5,12 +5,8 @@
     --text: #f6a664;
 }
 
-html{
-    overflow-x: hidden;
-}
-
-
 body{
+    /* overflow-x: hidden; */
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -35,7 +31,6 @@ h2{
     z-index: 10;
 }
 
-
 #home li{
     /* background-color: #00000070; */
     display: inline;
@@ -49,9 +44,8 @@ li{
 
 
 svg{
-    height: 100vh;
-    position: fixed;
-    left: 0;
+    height: 10vh;
+    color: #f6a664;
 }
 
 a{
@@ -88,13 +82,17 @@ p{
     justify-content: center;
 }
 
-.card-sponsor{
+.card{
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #fff;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.left{
+    text-align: left;
 }
 
 
@@ -124,13 +122,13 @@ p{
 }
 
 #home li:hover {
-    background-color: #0000002f;
+    background-color: #00000019;
 }
 
 #activities{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 5em;
-    padding: 5rem 5rem 0rem 5rem;
+    padding: 5rem 5rem 5rem 5rem;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -145,8 +143,11 @@ p{
 }
 
 #footer{
+    position: relative;
+    bottom: 0px;
+    top: 17px;
     margin-top: 10em;
-    height: 40vh;
+    /* height: 42vh; */
     background-color: var(--secondary-color);
     color: var(--white);
 }
@@ -166,12 +167,14 @@ p{
 }
 
 .copyright{
+    font-size: small;
     position: relative;
     margin-top: 5%;
     color: var(--white);
 }
 
 #footer ul{
+    margin-left: 40px;
     list-style: none;
 }
 
@@ -179,3 +182,16 @@ p{
     margin-top: 30px;
     height: 200px;
 }
+
+@media screen and (max-width: 800px) {
+    body{
+        overflow-x: hidden;
+    }
+    p{
+        padding: 20px;
+    }
+
+    #activities{
+        flex-direction: column;
+    }
+  }
