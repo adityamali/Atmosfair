@@ -1,7 +1,8 @@
 :root{
-    --primary-color: #100127;
+    --primary-color: #f9f5ee;
     --secondary-color: #000000;
     --white: #ffffff;
+    --text: rgb(246, 166, 100);
 }
 
 html{
@@ -17,7 +18,7 @@ body{
 
 section{
     /* height: 100vh; */
-    color: var(--white);
+    color: var(--text);
     text-align: center;
 }
 
@@ -30,7 +31,11 @@ h2{
 #home ul{
     list-style: none;
     display: inline-block;
-    padding: 0;
+    padding: 10px;
+    background-color: #00000070;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
 }
 
 
@@ -53,7 +58,7 @@ svg{
 
 a{
     text-decoration: none;
-    color: #fff;
+    color: var(--white);
 }
 
 p{
@@ -96,14 +101,16 @@ p{
 
 
 #home{
-    background-image: url("/assets/images/atmosfairbg.png");
-    background-position: center;
+    background-image: url("/assets/images/atmobg.png");
+    background-position: bottom;
     background-size: cover;
     height: 100vh;
 }
 
 #logo{
-    padding-top: 50px;
+    /* padding-top: 50px; */
+    position: fixed;
+    left: 1%;
     height: 50px;
 }
 
@@ -170,4 +177,9 @@ p{
 
 #footer ul{
     list-style: none;
+}
+
+#atmosfair{
+    margin-top: 80px;
+    height: 200px;
 }
