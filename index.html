@@ -92,40 +92,28 @@
         <div
           class="card"
           data-tilt
-          data-tilt-glare
-          data-tilt-max-glare="0.3"
         ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M144 48C144 21.49 165.5 0 192 0C218.5 0 240 21.49 240 48C240 74.51 218.5 96 192 96C165.5 96 144 74.51 144 48zM152 512C134.3 512 120 497.7 120 480V256.9L91.43 304.5C82.33 319.6 62.67 324.5 47.52 315.4C32.37 306.3 27.47 286.7 36.58 271.5L94.85 174.6C112.2 145.7 143.4 128 177.1 128H320V48C320 21.49 341.5 .0003 368 .0003H592C618.5 .0003 640 21.49 640 48V272C640 298.5 618.5 320 592 320H368C341.5 320 320 298.5 320 272V224H384V256H576V64H384V128H400C417.7 128 432 142.3 432 160C432 177.7 417.7 192 400 192H264V480C264 497.7 249.7 512 232 512C214.3 512 200 497.7 200 480V352H184V480C184 497.7 169.7 512 152 512L152 512z"/></svg>Present Your Startup</div>
         <div
           class="card"
           data-tilt
-          data-tilt-glare
-          data-tilt-max-glare="0.3"
         ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M495.5 223.2C491.6 223.7 487.6 224 483.4 224C457.4 224 434.2 212.6 418.3 195C402.4 212.6 379.2 224 353.1 224C327 224 303.8 212.6 287.9 195C272 212.6 248.9 224 222.7 224C196.7 224 173.5 212.6 157.6 195C141.7 212.6 118.5 224 92.36 224C88.3 224 84.21 223.7 80.24 223.2C24.92 215.8-1.255 150.6 28.33 103.8L85.66 13.13C90.76 4.979 99.87 0 109.6 0H466.4C476.1 0 485.2 4.978 490.3 13.13L547.6 103.8C577.3 150.7 551 215.8 495.5 223.2H495.5zM499.7 254.9C503.1 254.4 508 253.6 512 252.6V448C512 483.3 483.3 512 448 512H128C92.66 512 64 483.3 64 448V252.6C67.87 253.6 71.86 254.4 75.97 254.9L76.09 254.9C81.35 255.6 86.83 256 92.36 256C104.8 256 116.8 254.1 128 250.6V384H448V250.7C459.2 254.1 471.1 256 483.4 256C489 256 494.4 255.6 499.7 254.9L499.7 254.9z"/></svg>Carnival</div>
         <div
           class="card"
           data-tilt
-          data-tilt-glare
-          data-tilt-max-glare="0.3"
         ></div>
       </div>
       <div id="activities">
         <div
           class="card"
           data-tilt
-          data-tilt-glare
-          data-tilt-max-glare="0.3"
         ></div>
         <div
           class="card"
           data-tilt
-          data-tilt-glare
-          data-tilt-max-glare="0.3"
         ></div>
         <div
           class="card"
           data-tilt
-          data-tilt-glare
-          data-tilt-max-glare="0.3"
         ></div>
       </div>
       <img
@@ -179,9 +167,46 @@
       <div class="left">
         <ul>
           <li><h5>Contact Us</h5></li>
-          <li>Kabir Makhija (Overall Head EDC): +91 7388687536</li>
-          <li>Aditya Bhateja (Head of Marketing): +91 7388687536</li>
-          <li>edcbvducoep@gmail.com</li>
+          <form
+          action="https://formsubmit.co/edcbvducoep@gmail.com"
+          method="POST"
+          class="contact__form"
+        >
+          <input
+            type="text"
+            placeholder="Name"
+            name="name"
+            class="contact__input"
+            required
+          />
+          <input
+            type="mail"
+            placeholder="Email"
+            name="email"
+            class="contact__input"
+            pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+            title="Invalid email address"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Message"
+            cols="0"
+            rows="10"
+            class="contact__input"
+            style="resize: none"
+            required
+          ></textarea>
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" /><br />
+          <!-- <input type="hidden" name="_next"
+          value="http://127.0.0.1:5500/assets/html/thank_you.html" /> -->
+          <input
+            type="submit"
+            value="Submit"
+            class="contact__submit btn"
+          />
+        </form>
         </ul>
       </div>
       <div class="copyright">
